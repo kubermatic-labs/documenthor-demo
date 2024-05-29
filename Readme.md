@@ -6,7 +6,7 @@ This repo aims to give a short overview of how to setup documenthor and gives an
 
 Documenthor is a prow plugin that aims to simplify documentation management. It is specifically useful if your documentation resides in a different repository than the source code.
 
-Documenthor blocks any PRs from being merged either documentation is provided or the documentation is deferred to a later point in time.
+Documenthor blocks any PRs from being merged until either a link to a documentation is provided or the documentation is deferred to a later point in time.
 
 Usual Flow:
 
