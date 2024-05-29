@@ -1,0 +1,6 @@
+external_plugins:
+  kubermatic-labs/documenthor-demo:
+    - name: documenthor
+      events:
+        - issue_comment
+        - pull_request
