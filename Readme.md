@@ -6,12 +6,12 @@ This repo aims to give a short overview of how to setup documenthor and gives an
 
 Documenthor is a prow plugin that aims to simplify documentation management. It is specifically useful if your documentation resides in a different repository than the source code.
 
-Documenthor reacts to a specifically formatted field in the description of a PR and 
+Documenthor blocks any PRs from being merged either documentation is provided or the documentation is deferred to a later point in time.
 
-Usually the flow looks a bit like this:
+Usual Flow:
 
 1. A contributor opens a PR
-2. Until a specific field inside the PR description is not filled, a `do-not-merge/docs-needed` is applied which blocks any merging. The contributor then has three options to make the PR mergeable:
+2. Until a specific field inside the PR description is filled, a `do-not-merge/docs-needed` is applied which blocks any merging. The contributor then has three options to make the PR mergeable:
     * Add the link to another PR (from a different repo), which contains the documentation
     * Add the keyword `NONE` into the field => PR requires no documentation and is ready to merge
     * Add the keyword `TBD` into the field => Documentation will be handed in later, but PR should be merged already. Documenthor will also mark these PRs with the `docs/tbd` GH label
